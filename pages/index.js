@@ -8,6 +8,10 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Lily Hate Page</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
       <main>
         <h1 className={styles.title}>
@@ -15,7 +19,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Lily is a <b>STUPID IDIOT</b>
+          Lily is a <b><Link href="/posts/first-post">STUPID IDIOT</Link></b>
         </p>
 
         <div className={styles.grid}>
@@ -48,7 +52,7 @@ export default function Home() {
           >
             <h3>Grieve &rarr;</h3>
             <p>
-              Do not look. See.
+              Highschool was a nightmare.
             </p>
           </a>
         </div>
