@@ -1,49 +1,54 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import lily from '../public/lily.jpg'
+import richkim from '../public/richkim.jpg'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <main>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Lily Hate Page
         </h1>
 
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Lily is a <b>STUPID IDIOT</b>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://www.op.gg/summoners/na/Nyain%20Es-NA1" className={styles.card}>
+            <h3>Proof &rarr;</h3>
+            <p>Look at this dumbass play league lmao</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://overwatch.blizzard.com/en_US/search/?q=Lily002323" className={styles.card}>
+            <h3>Judge &rarr;</h3>
+            <p>She enjoys playing Blizzard Games like a dumbass</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.youtube.com/watch?v=7MNz7189EpI"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+                <Image src={lily}  
+                    alt="stupid stpuid stupid"
+                    width={300}
+                    height={100}
+                /> 
+            </p>
+          </a>
+
+          <a
+            href="https://www.gilman.edu/"
+            className={styles.card}
+          >
+            <h3>Grieve &rarr;</h3>
+            <p>
+              Do not look. See.
             </p>
           </a>
         </div>
@@ -51,12 +56,16 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/Rich-afk"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          <Image src={richkim}  
+            alt="rich gang"
+            width={50}
+            height={50}
+          /> 
         </a>
       </footer>
 
